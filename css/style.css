@@ -1,14 +1,11 @@
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+
   
   body {
     font-family: 'Nunito', sans-serif;
     color: #384047;
     margin-left: 0px;
     margin-right: 0px;
+    background-color: #F5F5F5;
   }
   
   .container,
@@ -21,7 +18,6 @@
 
     .content {
     max-width: 100%;
-    align-self: center;
     }
 
   .banner {
@@ -39,16 +35,15 @@
       text-align: center;
       padding-bottom: 20px;
       padding-top: 20px;
-      color: grey;
+      color: #808080;
+      font-weight: bold;
+      font-style: italic;
+      
   }
   
   .top_p {
     text-align: center;
 }
-
-  .top_p::first-line {
-      font-size: 30px;
-  }
 
   h1 {
     margin: 0 0 30px 0;
@@ -78,20 +73,23 @@
   select {
     padding: 6px;
     height: 32px;
-    border-radius: 2px;
   }
   
   button {
     width: 100%;
     font-size: 24px;
     line-height: 3;
-    border-radius: 4px;
     color: white;
     border: none;
     background-color: #4EBBB5;
     cursor: pointer;
 
   }
+
+
+input::placeholder {
+  text-align: right;
+}
   
   
   fieldset {
@@ -125,7 +123,7 @@
     margin-bottom: 8px;
   }
   
-  label.light {
+  label.newsletter_label {
     font-weight: 300;
     display: inline;
   }
@@ -135,7 +133,6 @@
   display: block;
   width: 100%;
   margin: 10px 0;
-  border-radius: 4px;
   line-height: 1;
   font-size: 0.8em;
   padding: 15px 15px;
@@ -146,7 +143,6 @@
 .fieldset_one select {
     display: block;
     width: 100%;
-    border-radius: 4px;
     margin: 10px 0;
     line-height: 1;
     font-size: 0.8em;
@@ -172,12 +168,12 @@
   width: 50%;
 }
 
-   @media (min-width: 768px) {
-
-
+@media (min-width: 768px) {
 
     .fieldset_one .input_items {
       display: flex;
+      align-items: baseline;
+      
     }
     
     label {
@@ -185,27 +181,35 @@
     }
 
     .fieldset_one .input_items label {
-        flex: 1 0 25%;
+        flex: 1 0 20%;
     }
 
-    .fieldset_one .input_items label[for="zip"] {
-        flex: 0 0 75%;
+    .fieldset_one .input_items  {
+        flex: 0 0 20%;
+
+    }
+     
+         .fieldset_one .input_items label[for="zip"] {
+        flex: 0 0 20%;
+        
+ 
     }
      
 
     #zip  {
-        width: 25%;
+        width: 15%;
     }
-    
+     
+
      .input_items label {
 
-      margin: auto;
+      margin: 0;
 
     }
     
-    .container,
+  .container, 
     header {
-      width: 50%;
+      width: 40%;
 
     }
     
