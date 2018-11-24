@@ -107,6 +107,12 @@ input::placeholder {
   
   }
 
+  .fieldset_two textarea {
+  padding:inherit;
+  
+  }
+
+
   .content {
     border-top: 2px solid #2D3945;
     margin-top: 3px;
